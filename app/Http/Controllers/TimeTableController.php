@@ -7,7 +7,7 @@ use App\Http\Requests\TimeStoreRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-class TimeController extends Controller
+class TimeTableController extends Controller
 {
     public function store(TimeStoreRequest $request)
     {

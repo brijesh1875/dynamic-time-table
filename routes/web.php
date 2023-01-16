@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\TimeController;
+use App\Http\Controllers\TimeTableController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::prefix('time')->group(function () {
-    Route::post('/store', [TimeController::class, 'store'])->name('store');
-    Route::get('/subject-details', [TimeController::class, 'setDetail'])->name('setDetail');
-    Route::post('/generate-time-table', [TimeController::class, 'generateTimeTable'])->name('generateTimeTable');
+    Route::post('/store', [TimeTableController::class, 'store'])->name('store');
+    Route::get('/subject-details', [TimeTableController::class, 'setDetail'])->name('setDetail');
+    Route::post('/generate-time-table', [TimeTableController::class, 'generateTimeTable'])->name('generateTimeTable');
 });
